@@ -52,8 +52,8 @@ public class Creature extends Card {
         System.out.println("|--------------");
         System.out.println("|P:" + power + "  HP:" + hp);
         System.out.println("|" + type);
-        System.out.println("|");
         System.out.println("|-" + getDescription() + "-");
+        System.out.println("|");
         System.out.println("|~~" + getFlavorText() + "~~");
         System.out.println("|______________");
         System.out.println("");

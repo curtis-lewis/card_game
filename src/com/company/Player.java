@@ -55,7 +55,16 @@ public class Player {
         System.out.println("#############################");
         a.setHp(a.getHp() - b.getPower());
         b.setHp(b.getHp() - a.getPower());
-        if (a.getHp() <= 0) {
+        if (b.getHp() <= 0 && a.getHp() <= 0) {
+            a.setHp(0);
+            b.setHp(0);
+            System.out.println(a.getName() + " has been slain.");
+            System.out.println(b.getName() + " has been slain.");
+            System.out.println("#############################");
+            a.display();
+            b.display();
+        }
+        else if (a.getHp() <= 0) {
             a.setHp(0);
             System.out.println(a.getName() + " has been slain.");
             System.out.println("#############################");
@@ -66,14 +75,6 @@ public class Player {
             System.out.println(b.getName() + " has been slain.");
             System.out.println("#############################");
             a.display();
-        }
-        else if (b.getHp() <= 0 && a.getHp() <= 0) {
-            a.setHp(0);
-            b.setHp(0);
-            System.out.println(a.getName() + " has been slain.");
-            System.out.println("#############################");
-            a.display();
-            b.display();
         }
         else {
             System.out.println("No creatures have been slain.");
