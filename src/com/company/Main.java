@@ -10,12 +10,12 @@ public class Main {
         CardCreator cardCreator = new CardCreator();
 
         Creature cardA = cardCreator.start();
-        //Creature cardB = cardCreator.start();
+        Creature cardB = cardCreator.start();
 
         cardA.display();
-        //cardB.display();
+        cardB.display();
 
-        //player.attack(cardA, cardB);
+        player.attack(cardA, cardB);
 
     }
 }

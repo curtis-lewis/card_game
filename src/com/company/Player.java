@@ -67,6 +67,7 @@ public class Player {
             System.out.println("#############################");
             a.display();
         }
+        else if (b.getHp() <= 0 && a.get)
         else {
             System.out.println("No creatures have been slain.");
             System.out.println("#############################");
